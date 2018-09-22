@@ -1,5 +1,6 @@
 html,
 body {
+    /* needed to add these to get horizontal scroll bar off the screen */
     height: 100%;
     max-width: 100%;
     overflow-x: hidden;
@@ -18,8 +19,6 @@ body {
     color: white;
     border: 2px solid #ccc;
     width: 100%;
-    margin: 0 auto;
-    overflow: hidden;
 }
 
 .header-subcontainer {
@@ -67,7 +66,7 @@ a {
 .content-box {
     width: 96%;
     margin: 0 auto;
-    border: 1px solid #ddd;
+    border: 2px solid #ddd;
     padding: 02%;
     margin-top: 40px;
     margin-bottom: 40px;
@@ -78,6 +77,14 @@ a {
 
 .content-header {
     color: #4aaaa5;
+}
+
+hr {
+    height: 0px;
+    background: #ccc;
+    color: #ccc;
+    border: 5px solid;
+    border-radius: 90%;
 }
 
 .profile-image {
