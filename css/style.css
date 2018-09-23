@@ -50,7 +50,7 @@ h2 {
     padding: 25px;
 }
 
-a {
+.nav a {
  font-size: 20px;
  color: #777;
  text-decoration: none;
@@ -61,7 +61,7 @@ a {
 /* ***************************************** */
 
 
-.header-container:after {
+.header-container::after {
     /* clearfix for floated header */
     content: "";
     display: block;
@@ -104,6 +104,13 @@ hr {
     color: #ccc;
     border: 5px solid;
     border-radius: 90%;
+}
+
+.content::after {
+    /* clearfix for floated content */
+    content: "";
+    display: block;
+    clear: both;
 }
 
 .footer-container, 
@@ -156,6 +163,53 @@ hr {
 
 **********************************************************/
 
-.thumbnail {
-    /* thumbnail styling */
+.grid-container {
+    /*  3 column grid */
+    /*  grid seems to be wider than 960px */
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+    grid-gap: 5px;
 }
+
+.thumbnail {
+    position: relative;
+    height: 300px;
+    width: 300px;
+    border: solid #ddd 3px;
+    border-radius: 5%;
+}
+
+.thumbnail-banner {
+    /* Placing the banner on the page and vertically centering text */
+    position: absolute;
+    bottom: 5px;
+    background: #4aaaa5;
+    color: white;
+    font-size: 22px;
+    z-index: 4;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    border-radius: 60%;
+    padding-bottom: 15px;
+}
+
+.thumbnail img {
+    max-width: auto; 
+    max-height: 100%;
+    margin:auto;
+    display:block;
+    border-radius: 4%;
+}
+
+.grid-container a:hover {
+    /* add some hover styling */
+}
+
+
+/* ********************************************************
+
+        CONTACT.HTML CSS SECTION
+
+**********************************************************/
+
