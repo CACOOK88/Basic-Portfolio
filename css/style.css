@@ -54,15 +54,17 @@ h2 {
 }
 
 .nav a {
- font-size: 20px;
- color: #777;
- text-decoration: none;
- margin-left: 20px;
+    font-size: 20px;
+    color: #777;
+    text-decoration: none;
+    margin-left: 20px;
+    transition: all .5s;
 }
 
-/* come back and add in a:hover properties for extra flare */
-/* ***************************************** */
-
+.nav a:hover {
+    color: #AA6B4A;
+    font-size: 22px;
+}
 
 .header-container::after {
     /* clearfix for floated header */
