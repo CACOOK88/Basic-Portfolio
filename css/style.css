@@ -207,8 +207,10 @@ hr {
     border-radius: 3px;
 }
 
-.grid-container a:hover {
+.grid-container a img:hover {
     /* add some hover styling */
+    transition: all 1s linear;
+    filter: blur(5px);
 }
 
 
