@@ -1,3 +1,9 @@
+/**************************************************************************
+
+        CSS FOR ALL PAGES
+
+**************************************************************************/
+
 html,
 body {
     /* needed to add these to get horizontal scroll bar off the screen */
@@ -26,12 +32,16 @@ body {
     margin: 0 auto;
 }
 
+h1,
+h2 {
+    font-family: 'Georgia', Times, Times New Roman, serif;
+}
+
 .name {
     background: #4aaaa5;
     float: left;
     padding: 20px;
     margin: 0;
-    font-family: 'Georgia', Times, Times New Roman, serif;
 }
 
 .nav {
@@ -47,16 +57,24 @@ a {
  margin-left: 20px;
 }
 
+/* come back and add in a:hover properties for extra flare */
+/* ***************************************** */
+
+
 .header-container:after {
+    /* clearfix for floated header */
     content: "";
     display: block;
     clear: both;
 }
 
 .content {
+    /*  this is the wrapper box and used for page height  */
     width: 960px;
-    margin: 0 auto;
     line-height: 1.5em;
+    /*  min-height calc used to sticky the footer at the
+        bottom of the pages even when the content above is
+        is short.  */
     min-height: calc( 100% - 120px);
     height: auto !important;
     height: 100%;
@@ -64,14 +82,12 @@ a {
 }
 
 .content-box {
-    width: 96%;
     margin: 0 auto;
     border: 2px solid #ddd;
     padding: 02%;
     margin-top: 40px;
     margin-bottom: 40px;
     background: #fff;
-    font-family: 'Georgia', Times, Times New Roman, serif;
     overflow: auto;
 }
 
@@ -80,30 +96,29 @@ a {
 }
 
 hr {
-    height: 0px;
+    /*  horizontal line break. I was playing around with
+        the styling and was able to get it to look like
+        the pretty cool thin oval. Good find for added
+        style  */
     background: #ccc;
     color: #ccc;
     border: 5px solid;
     border-radius: 90%;
 }
 
-.profile-image {
-    float: left;
-    margin: 10px;
-    width: 200px;
-    height: 200px;
-}
-
 .footer-container, 
 .push {
+    /*  Used this to push the div class to ensure content
+        didnt get placed behind the footer when scrolled
+        all the way to the bottom */
     height: 60px;
 } 
 
 .footer-container {
     position: relative;
     text-align: center;
-    background: #4aaaa5;
-    height: 60px;
+    /* background: #4aaaa5;
+    height: 60px; */
     padding-bottom: 0px;
 }
 
@@ -115,4 +130,32 @@ hr {
     background: #666;
     height: 50px;
     padding-bottom: 10;
+    z-index: 2;
+    border-top: 8px solid #4aaaa5;
+}
+
+/* ********************************************************
+
+        INDEX.HTML CSS SECTION
+
+***********************************************************/
+
+
+
+.profile-image {
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 0px;
+    width: 200px;
+    height: 200px;
+}
+
+/* ********************************************************
+
+        PORTFOLIO.HTML CSS SECTION
+
+**********************************************************/
+
+.thumbnail {
+    /* thumbnail styling */
 }
