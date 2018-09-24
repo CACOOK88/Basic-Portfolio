@@ -202,7 +202,7 @@ hr {
 }
 
 .thumbnail img {
-    max-width: auto; 
+    max-width: 300px; 
     max-height: 100%;
     margin:auto;
     display:block;
@@ -245,5 +245,12 @@ input[type="submit"] {
     color: white;
     padding: 10px;
     width: 130px;
+}
+
+input[type="submit"]:hover {
+    background: #F6DB5F;
+    cursor: pointer;
+    color: black;
+    font-weight: 600;
 }
 
