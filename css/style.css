@@ -201,17 +201,17 @@ hr {
     padding-bottom: 15px;
 }
 
-.thumbnail img {
+.thumbnail-image {
     max-width: 300px; 
     max-height: 100%;
     margin:auto;
     display:block;
     border-radius: 3px;
+    transition: all 1s linear;
 }
 
-.grid-container a img:hover {
+.thumbnail-image:hover {
     /* add some hover styling */
-    transition: all 1s linear;
     filter: blur(5px);
 }
 
